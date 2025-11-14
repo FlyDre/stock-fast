@@ -1,0 +1,219 @@
+2025-11-14 12:22:39,089 - WARNING - 获取股票 000001 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=22&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:22:40,485 - WARNING - 获取股票 000001 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=2&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:22:41,873 - WARNING - 获取股票 000001 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=2&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:22:41,873 - ERROR - 获取股票 000001 实时价格最终失败
+2025-11-14 12:22:42,077 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:22:42,411 - WARNING - 获取股票 000001 历史数据失败，第 1 次尝试: Length mismatch: Expected axis has 12 elements, new values have 11 elements
+2025-11-14 12:22:43,726 - WARNING - 获取股票 000001 历史数据失败，第 2 次尝试: Length mismatch: Expected axis has 12 elements, new values have 11 elements
+2025-11-14 12:22:45,066 - WARNING - 获取股票 000001 历史数据失败，第 3 次尝试: Length mismatch: Expected axis has 12 elements, new values have 11 elements
+2025-11-14 12:22:45,066 - ERROR - 获取股票 000001 历史数据最终失败
+2025-11-14 12:25:34,758 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:25:35,059 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:25:35,258 - WARNING - 获取股票 000001 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:25:36,590 - WARNING - 获取股票 000001 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:25:37,890 - WARNING - 获取股票 000001 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:25:37,890 - ERROR - 获取股票 000001 实时价格最终失败
+2025-11-14 12:25:58,486 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:25:58,723 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:25:58,926 - WARNING - 获取股票 000001 实时价格失败，第 1 次尝试: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-11-14 12:26:00,117 - WARNING - 获取股票 000001 实时价格失败，第 2 次尝试: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-11-14 12:26:01,334 - WARNING - 获取股票 000001 实时价格失败，第 3 次尝试: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-11-14 12:26:01,334 - ERROR - 获取股票 000001 实时价格最终失败
+2025-11-14 12:26:18,513 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:26:18,705 - INFO - 成功获取股票 600036 基本信息
+2025-11-14 12:26:18,904 - INFO - 成功获取股票 600519 基本信息
+2025-11-14 12:26:19,110 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:26:19,116 - INFO - 数据已保存到 data\demo_historical_data.csv
+2025-11-14 12:26:19,314 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:26:20,519 - INFO - 成功获取股票 000002 历史数据，共 244 条记录
+2025-11-14 12:26:21,710 - INFO - 成功获取股票 600036 历史数据，共 244 条记录
+2025-11-14 12:26:22,713 - INFO - 数据已保存到 data\000001_batch_demo.csv
+2025-11-14 12:26:22,715 - INFO - 数据已保存到 data\000002_batch_demo.csv
+2025-11-14 12:26:22,731 - INFO - 数据已保存到 data\600036_batch_demo.csv
+2025-11-14 12:26:22,926 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:29:31,776 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 12:29:32,971 - INFO - 成功获取股票 300750 历史数据，共 244 条记录
+2025-11-14 12:29:33,975 - INFO - 数据已保存到 data\002594_historical_data.csv
+2025-11-14 12:29:33,984 - INFO - 数据已保存到 data\300750_historical_data.csv
+2025-11-14 12:30:40,317 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 12:30:40,661 - INFO - 成功获取股票 300750 基本信息
+2025-11-14 12:31:05,471 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:06,712 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:07,947 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:07,948 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 12:31:08,260 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 12:31:08,462 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:31:52,708 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:54,007 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:55,306 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:31:55,307 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 12:31:55,564 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 12:31:55,838 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:33:02,245 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:33:03,438 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:33:04,623 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:33:04,623 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 12:33:04,820 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 12:33:05,124 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:46:10,629 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:46:10,886 - INFO - 成功获取股票 600036 基本信息
+2025-11-14 12:46:11,148 - INFO - 成功获取股票 600519 基本信息
+2025-11-14 12:46:11,461 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:46:11,465 - INFO - 数据已保存到 data\demo_historical_data_formatted.csv
+2025-11-14 12:46:11,669 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:46:12,889 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 12:46:14,110 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 12:46:15,130 - INFO - 数据已保存到 data\601127_batch_demo.csv
+2025-11-14 12:46:15,134 - INFO - 数据已保存到 data\603081_batch_demo.csv
+2025-11-14 12:46:15,137 - INFO - 数据已保存到 data\002594_batch_demo.csv
+2025-11-14 12:46:15,342 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:59:31,064 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:59:32,238 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:59:33,415 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 12:59:33,415 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 12:59:33,682 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 12:59:33,897 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:59:49,196 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 12:59:49,526 - INFO - 成功获取股票 600036 基本信息
+2025-11-14 12:59:49,841 - INFO - 成功获取股票 600519 基本信息
+2025-11-14 12:59:50,045 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 12:59:50,049 - INFO - 数据已保存到 data\demo_historical_data_formatted.csv
+2025-11-14 12:59:50,255 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 12:59:51,460 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 12:59:52,656 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 12:59:53,660 - INFO - 数据已保存到 data\601127_batch_demo.csv
+2025-11-14 12:59:53,662 - INFO - 数据已保存到 data\603081_batch_demo.csv
+2025-11-14 12:59:53,663 - INFO - 数据已保存到 data\002594_batch_demo.csv
+2025-11-14 12:59:53,867 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:03:13,675 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=2&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:03:14,937 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:03:16,209 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:03:16,210 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 13:03:16,519 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:03:16,722 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:08:04,464 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:08:05,647 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:08:07,040 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=2&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:08:07,040 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 13:08:07,307 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:08:07,574 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:47:41,682 - WARNING - 获取股票 601127 实时价格失败，第 1 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:47:42,867 - WARNING - 获取股票 601127 实时价格失败，第 2 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=1&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:47:44,261 - WARNING - 获取股票 601127 实时价格失败，第 3 次尝试: HTTPSConnectionPool(host='82.push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/clist/get?pn=2&pz=100&po=1&np=1&ut=bd1d9ddb04089700cf9c27f6f7426281&fltt=2&invt=2&fid=f12&fs=m%3A0+t%3A6%2Cm%3A0+t%3A80%2Cm%3A1+t%3A2%2Cm%3A1+t%3A23%2Cm%3A0+t%3A81+s%3A2048&fields=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6%2Cf7%2Cf8%2Cf9%2Cf10%2Cf12%2Cf13%2Cf14%2Cf15%2Cf16%2Cf17%2Cf18%2Cf20%2Cf21%2Cf23%2Cf24%2Cf25%2Cf22%2Cf11%2Cf62%2Cf128%2Cf136%2Cf115%2Cf152 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:47:44,262 - ERROR - 获取股票 601127 实时价格最终失败
+2025-11-14 13:47:44,461 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:47:44,663 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:50:06,170 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 13:50:06,377 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:50:06,569 - INFO - 成功获取股票 600519 基本信息
+2025-11-14 13:50:06,876 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:50:06,880 - INFO - 数据已保存到 data\000001_safe_demo.csv
+2025-11-14 13:50:07,083 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 13:50:07,086 - INFO - 数据已保存到 data\002594_safe_demo.csv
+2025-11-14 13:50:07,295 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:50:35,479 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:50:35,683 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:50:50,304 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:50:50,516 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:50:53,769 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:50:54,055 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:51:00,105 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:51:00,368 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:51:02,510 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:51:02,783 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:51:04,502 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:51:04,782 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:51:23,165 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:51:24,419 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 13:51:25,691 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 13:51:26,947 - INFO - 成功获取股票 300750 历史数据，共 244 条记录
+2025-11-14 13:52:01,772 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 13:52:02,018 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:52:03,270 - INFO - 成功获取股票 600519 基本信息
+2025-11-14 13:52:03,547 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:52:03,551 - INFO - 数据已保存到 data\000001_safe_demo.csv
+2025-11-14 13:52:03,754 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 13:52:03,758 - INFO - 数据已保存到 data\002594_safe_demo.csv
+2025-11-14 13:52:03,964 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:52:11,755 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:52:12,016 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:56:44,706 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:56:45,250 - INFO - 成功获取股票 603081 基本信息
+2025-11-14 13:56:45,572 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:56:45,909 - INFO - 成功获取股票 300750 基本信息
+2025-11-14 13:56:57,953 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:56:58,153 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:56:58,188 - INFO - 数据已保存到 data\601127_data_20251114_135658.csv
+2025-11-14 13:56:58,546 - INFO - 成功获取股票 603081 基本信息
+2025-11-14 13:56:58,764 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 13:56:58,773 - INFO - 数据已保存到 data\603081_data_20251114_135658.csv
+2025-11-14 13:56:59,091 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:56:59,324 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 13:56:59,339 - INFO - 数据已保存到 data\002594_data_20251114_135659.csv
+2025-11-14 13:56:59,651 - INFO - 成功获取股票 300750 基本信息
+2025-11-14 13:56:59,867 - INFO - 成功获取股票 300750 历史数据，共 244 条记录
+2025-11-14 13:56:59,875 - INFO - 数据已保存到 data\300750_data_20251114_135659.csv
+2025-11-14 13:57:09,934 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:57:10,133 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:57:10,141 - INFO - 数据已保存到 data\601127_data_20251114_135710.csv
+2025-11-14 13:57:10,482 - INFO - 成功获取股票 603081 基本信息
+2025-11-14 13:57:10,691 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 13:57:10,700 - INFO - 数据已保存到 data\603081_data_20251114_135710.csv
+2025-11-14 13:57:11,019 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:57:11,247 - INFO - 成功获取股票 002594 历史数据，共 244 条记录
+2025-11-14 13:57:11,256 - INFO - 数据已保存到 data\002594_data_20251114_135711.csv
+2025-11-14 13:57:11,568 - INFO - 成功获取股票 300750 基本信息
+2025-11-14 13:57:11,776 - INFO - 成功获取股票 300750 历史数据，共 244 条记录
+2025-11-14 13:57:11,784 - INFO - 数据已保存到 data\300750_data_20251114_135711.csv
+2025-11-14 13:57:17,639 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:57:17,965 - INFO - 成功获取股票 603081 基本信息
+2025-11-14 13:57:18,267 - INFO - 成功获取股票 002594 基本信息
+2025-11-14 13:57:18,589 - INFO - 成功获取股票 300750 基本信息
+2025-11-14 13:59:17,836 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 13:59:18,075 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 13:59:50,465 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 13:59:50,947 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 13:59:50,999 - INFO - 数据已保存到 data\601127_data_20251114_135950.csv
+2025-11-14 13:59:51,337 - WARNING - 获取股票 603081 信息失败，第 1 次尝试: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.603081 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 13:59:52,637 - INFO - 成功获取股票 603081 基本信息
+2025-11-14 13:59:52,844 - INFO - 成功获取股票 603081 历史数据，共 244 条记录
+2025-11-14 13:59:52,852 - INFO - 数据已保存到 data\603081_data_20251114_135952.csv
+2025-11-14 14:06:00,234 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 14:06:00,555 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 14:06:11,411 - WARNING - 获取股票 000001 历史数据失败，第 1 次尝试: HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.000001&beg=20241114&end=20251114 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 14:06:12,653 - INFO - 成功获取股票 000001 历史数据，共 244 条记录
+2025-11-14 14:06:12,863 - INFO - 成功获取股票 000001 基本信息
+2025-11-14 14:06:39,313 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:06:39,532 - WARNING - 获取股票 601127 信息失败，第 1 次尝试: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.601127 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 14:06:40,720 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:06:50,445 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:06:50,643 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:06:53,213 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:06:53,406 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:07:40,242 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:07:40,440 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:08,823 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:09,128 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:09,333 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:09,639 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:11,605 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:11,917 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:13,778 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:14,105 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:17,257 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:17,546 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:18,891 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:19,225 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:21,130 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:21,479 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:08:33,806 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:08:34,115 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:09:03,735 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:09:04,003 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:09:14,709 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:09:14,946 - WARNING - 获取股票 601127 信息失败，第 1 次尝试: HTTPSConnectionPool(host='push2.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/get?fltt=2&invt=2&fields=f120%2Cf121%2Cf122%2Cf174%2Cf175%2Cf59%2Cf163%2Cf43%2Cf57%2Cf58%2Cf169%2Cf170%2Cf46%2Cf44%2Cf51%2Cf168%2Cf47%2Cf164%2Cf116%2Cf60%2Cf45%2Cf52%2Cf50%2Cf48%2Cf167%2Cf117%2Cf71%2Cf161%2Cf49%2Cf530%2Cf135%2Cf136%2Cf137%2Cf138%2Cf139%2Cf141%2Cf142%2Cf144%2Cf145%2Cf147%2Cf148%2Cf140%2Cf143%2Cf146%2Cf149%2Cf55%2Cf62%2Cf162%2Cf92%2Cf173%2Cf104%2Cf105%2Cf84%2Cf85%2Cf183%2Cf184%2Cf185%2Cf186%2Cf187%2Cf188%2Cf189%2Cf190%2Cf191%2Cf192%2Cf107%2Cf111%2Cf86%2Cf177%2Cf78%2Cf110%2Cf262%2Cf263%2Cf264%2Cf267%2Cf268%2Cf255%2Cf256%2Cf257%2Cf258%2Cf127%2Cf199%2Cf128%2Cf198%2Cf259%2Cf260%2Cf261%2Cf171%2Cf277%2Cf278%2Cf279%2Cf288%2Cf152%2Cf250%2Cf251%2Cf252%2Cf253%2Cf254%2Cf269%2Cf270%2Cf271%2Cf272%2Cf273%2Cf274%2Cf275%2Cf276%2Cf265%2Cf266%2Cf289%2Cf290%2Cf286%2Cf285%2Cf292%2Cf293%2Cf294%2Cf295%2Cf43&secid=1.601127 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2025-11-14 14:09:15,081 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:09:15,277 - INFO - 成功获取股票 601127 历史数据，共 244 条记录
+2025-11-14 14:09:15,405 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:09:15,630 - INFO - 成功获取股票 601127 基本信息
+2025-11-14 14:09:16,264 - INFO - 成功获取股票 601127 基本信息
