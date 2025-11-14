@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 股票数据获取工具
 
 基于AkShare的轻量级股票数据获取工具，支持获取实时价格和历史数据。
@@ -166,3 +167,7 @@ stock_data_fetcher/
 2. 依赖包是否正确安装
 3. 股票代码格式是否正确
 4. 查看logs目录下的日志文件获取详细错误信息
+=======
+# stock-fast
+A self-made stock checking project
+>>>>>>> 3e366d87a81c4a4eea4281e0bcdb5b7f848d8c8c
