@@ -17,9 +17,12 @@ from display_utils import format_stock_info, format_historical_summary
 class StockDataUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("股票数据获取工具")
-        self.root.geometry("800x700")
-        self.root.resizable(True, True)
+        try:
+            self.root.title("股票数据获取工具")
+            self.root.geometry("800x700")
+            self.root.resizable(True, True)
+        except Exception:
+            pass
         
         # 初始化数据获取器
         self.fetcher = StockDataFetcher()

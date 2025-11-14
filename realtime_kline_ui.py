@@ -27,7 +27,7 @@ class RealtimeKlineUI:
         
         # 数据相关
         self.fetcher = StockDataFetcher()
-        self.current_stock = "000001"
+        self.current_stock = "601127"
         self.update_interval = 30  # 30秒更新一次，比同花顺更快
         self.is_updating = False
         self.update_thread = None

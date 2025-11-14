@@ -112,11 +112,13 @@ def demo():
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
+        # 带参数：走命令行数据获取流程
         main()
     else:
-        # 如果没有命令行参数，运行演示
-        print("💡 提示：检测到可能的网络环境问题")
-        print("    如需完整功能演示，请运行: python demo_safe.py")
-        print("    或使用命令行参数指定功能，如: python main.py --mode historical")
-        print()
-        demo()
+        # 无参数：启动统一 UI
+        import tkinter as tk
+        from unified_ui import UnifiedStockApp
+
+        root = tk.Tk()
+        app = UnifiedStockApp(root)
+        root.mainloop()

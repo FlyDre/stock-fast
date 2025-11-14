@@ -15,17 +15,26 @@ from datetime import datetime, timedelta
 import threading
 import time
 
+# 设置matplotlib支持中文
+import matplotlib
+matplotlib.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'DejaVu Sans']
+matplotlib.rcParams['axes.unicode_minus'] = False
+
 from data_fetcher import StockDataFetcher
 
 class RealKlineUI:
-    def __init__(self, root):
+    def __init__(self, root, proxy_host: str = "127.0.0.1", proxy_port: int = 7890):
         self.root = root
-        self.root.title("真实数据K线图表")
-        self.root.geometry("1200x800")
+        # 作为独立窗口时设置窗口属性；嵌入到父 Frame 时忽略
+        try:
+            self.root.title("真实数据K线图表")
+            self.root.geometry("1200x800")
+        except Exception:
+            pass
         
-        # 数据获取器
-        self.fetcher = StockDataFetcher()
-        self.current_stock = "000001"
+        # 数据获取器 - 配置代理
+        self.fetcher = StockDataFetcher(proxy_host=proxy_host, proxy_port=proxy_port)
+        self.current_stock = "601127"
         
         # 数据存储
         self.current_data = None
@@ -221,7 +230,9 @@ class RealKlineUI:
                 self.root.after(0, lambda: self.update_status("获取历史数据失败"))
                 
         except Exception as e:
-            self.root.after(0, lambda: self.update_status(f"数据加载失败: {str(e)}"))
+            print(f"数据加载错误: {e}")
+            msg = str(e)[:100]
+            self.root.after(0, lambda: self.update_status(f"数据加载失败"))
             
     def update_basic_info(self):
         """更新基本信息显示"""
@@ -320,11 +331,16 @@ class RealKlineUI:
             
             # 准备数据
             df = self.current_data.copy()
-            df['日期'] = pd.to_datetime(df['日期'])
             
-            # 只显示最近50根K线，避免图表过于拥挤
-            if len(df) > 50:
-                df = df.tail(50)
+            # 确保日期列格式正确
+            if '日期' in df.columns:
+                df['日期'] = pd.to_datetime(df['日期'])
+                # 重置索引，使用连续的数字索引
+                df = df.reset_index(drop=True)
+            
+            # 只显示最近30根K线，避免图表过于拥挤
+            if len(df) > 30:
+                df = df.tail(30).reset_index(drop=True)
             
             # 绘制K线图
             self.draw_kline_bars(df)
@@ -344,80 +360,146 @@ class RealKlineUI:
             
     def draw_kline_bars(self, df):
         """绘制K线柱"""
-        for i, (idx, row) in enumerate(df.iterrows()):
-            open_price = float(row['开盘'])
-            high_price = float(row['最高'])
-            low_price = float(row['最低'])
-            close_price = float(row['收盘'])
-            
-            # 确定K线颜色（中国习惯：红涨绿跌）
-            if close_price >= open_price:
-                color = 'red'
-                edge_color = 'darkred'
-            else:
-                color = 'green'
-                edge_color = 'darkgreen'
-            
-            # 绘制上下影线
-            self.ax_kline.plot([i, i], [low_price, high_price], 
-                              color='black', linewidth=1)
-            
-            # 绘制K线实体
-            body_height = abs(close_price - open_price)
-            body_bottom = min(open_price, close_price)
-            
-            if body_height > 0:
-                # 有实体的K线
-                rect = plt.Rectangle((i-0.4, body_bottom), 0.8, body_height,
+        try:
+            for i in range(len(df)):
+                row = df.iloc[i]
+                
+                # 安全转换数值，处理可能的数据类型问题
+                try:
+                    open_price = float(row['开盘'])
+                    high_price = float(row['最高'])
+                    low_price = float(row['最低'])
+                    close_price = float(row['收盘'])
+                except (ValueError, KeyError) as e:
+                    print(f"数据转换错误 第{i}行: {e}")
+                    continue
+                
+                # 确定K线颜色（中国习惯：红涨绿跌）
+                if close_price >= open_price:
+                    color = '#FF0000'  # 红色
+                    edge_color = '#CC0000'
+                else:
+                    color = '#00AA00'  # 绿色
+                    edge_color = '#008800'
+                
+                # 绘制上下影线
+                self.ax_kline.plot([i, i], [low_price, high_price], 
+                                  color='black', linewidth=1, solid_capstyle='round')
+                
+                # 绘制K线实体
+                body_height = abs(close_price - open_price)
+                body_bottom = min(open_price, close_price)
+                
+                if body_height > 0.01:  # 避免过小的实体
+                    # 有实体的K线
+                    from matplotlib.patches import Rectangle
+                    rect = Rectangle((i-0.4, body_bottom), 0.8, body_height,
                                    facecolor=color, edgecolor=edge_color, 
                                    alpha=0.8, linewidth=0.5)
-                self.ax_kline.add_patch(rect)
-            else:
-                # 十字星（开盘价=收盘价）
-                self.ax_kline.plot([i-0.4, i+0.4], [close_price, close_price], 
-                                 color=color, linewidth=2)
+                    self.ax_kline.add_patch(rect)
+                else:
+                    # 十字星（开盘价=收盘价）
+                    self.ax_kline.plot([i-0.4, i+0.4], [close_price, close_price], 
+                                     color=color, linewidth=2)
+        except Exception as e:
+            print(f"绘制K线错误: {e}")
                                  
     def draw_volume_bars(self, df):
         """绘制成交量柱状图"""
-        for i, (idx, row) in enumerate(df.iterrows()):
-            volume = float(row['成交量'])
-            open_price = float(row['开盘'])
-            close_price = float(row['收盘'])
+        try:
+            volumes = []
+            colors = []
             
-            # 成交量柱颜色与K线一致
-            color = 'red' if close_price >= open_price else 'green'
+            for i in range(len(df)):
+                row = df.iloc[i]
+                
+                try:
+                    volume = float(row['成交量'])
+                    open_price = float(row['开盘'])
+                    close_price = float(row['收盘'])
+                    
+                    volumes.append(volume)
+                    # 成交量柱颜色与K线一致
+                    color = '#FF0000' if close_price >= open_price else '#00AA00'
+                    colors.append(color)
+                    
+                except (ValueError, KeyError) as e:
+                    print(f"成交量数据错误 第{i}行: {e}")
+                    volumes.append(0)
+                    colors.append('#CCCCCC')
             
-            self.ax_volume.bar(i, volume, width=0.8, color=color, alpha=0.7)
+            # 批量绘制成交量柱
+            bars = self.ax_volume.bar(range(len(volumes)), volumes, 
+                                     width=0.8, color=colors, alpha=0.7)
+            
+        except Exception as e:
+            print(f"绘制成交量错误: {e}")
             
     def setup_chart_style(self, df):
         """设置图表样式"""
-        # K线图设置
-        stock_name = self.info_labels["name"].get()
-        self.ax_kline.set_title(f"{self.current_stock} {stock_name} - 真实K线数据", 
-                               fontsize=14, fontweight='bold')
-        self.ax_kline.set_ylabel("价格 (元)", fontsize=11)
-        self.ax_kline.grid(True, alpha=0.3, linestyle='--')
-        
-        # 成交量图设置
-        self.ax_volume.set_ylabel("成交量", fontsize=11)
-        self.ax_volume.set_xlabel("交易日期", fontsize=11)
-        self.ax_volume.grid(True, alpha=0.3, linestyle='--')
-        
-        # 设置X轴日期标签
-        if len(df) > 0:
-            # 选择合适的日期标签间隔
-            step = max(1, len(df) // 8)
-            x_positions = list(range(0, len(df), step))
-            x_labels = [df.iloc[i]['日期'].strftime('%m-%d') for i in x_positions]
+        try:
+            # K线图设置
+            stock_name = self.info_labels["name"].get()
+            title = f"{self.current_stock} {stock_name} - 真实K线数据"
             
-            self.ax_kline.set_xticks(x_positions)
-            self.ax_kline.set_xticklabels(x_labels, rotation=45)
+            self.ax_kline.set_title(title, fontsize=14, fontweight='bold', pad=15)
+            self.ax_kline.set_ylabel("价格 (元)", fontsize=11)
+            self.ax_kline.grid(True, alpha=0.3, linestyle='--')
             
-            self.ax_volume.set_xticks(x_positions)
-            self.ax_volume.set_xticklabels(x_labels, rotation=45)
-        
-        # 调整布局，避免标签重叠
-        self.fig.tight_layout()
+            # 成交量图设置
+            self.ax_volume.set_ylabel("成交量", fontsize=11)
+            self.ax_volume.set_xlabel("交易日期", fontsize=11)
+            self.ax_volume.grid(True, alpha=0.3, linestyle='--')
+            
+            # 设置X轴标签 - 修复坐标问题
+            if len(df) > 0 and '日期' in df.columns:
+                # 确定标签间隔，避免过于密集
+                total_bars = len(df)
+                if total_bars <= 10:
+                    step = 1
+                elif total_bars <= 20:
+                    step = 2
+                else:
+                    step = max(1, total_bars // 8)
+                
+                # 生成X轴位置和标签
+                x_positions = list(range(0, total_bars, step))
+                x_labels = []
+                
+                for pos in x_positions:
+                    if pos < len(df):
+                        try:
+                            date_obj = df.iloc[pos]['日期']
+                            if pd.isna(date_obj):
+                                x_labels.append('')
+                            else:
+                                # 处理日期格式
+                                if isinstance(date_obj, str):
+                                    date_obj = pd.to_datetime(date_obj)
+                                x_labels.append(date_obj.strftime('%m-%d'))
+                        except Exception as e:
+                            print(f"日期格式处理错误: {e}")
+                            x_labels.append(f"Day{pos+1}")
+                
+                # 设置X轴刻度 - 留出右边空间以显示完整的K线
+                self.ax_kline.set_xlim(-1, total_bars)
+                self.ax_kline.set_xticks(x_positions)
+                self.ax_kline.set_xticklabels(x_labels, rotation=45, ha='right')
+                
+                self.ax_volume.set_xlim(-1, total_bars)
+                self.ax_volume.set_xticks(x_positions)
+                self.ax_volume.set_xticklabels(x_labels, rotation=45, ha='right')
+                
+                # 设置Y轴格式
+                self.ax_kline.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'{x:.2f}'))
+                self.ax_volume.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'{x:,.0f}'))
+            
+            # 调整布局 - 增加右边距
+            self.fig.tight_layout(rect=[0, 0.03, 0.95, 0.97])
+            self.fig.subplots_adjust(right=0.92)
+            
+        except Exception as e:
+            print(f"设置图表样式错误: {e}")
         
     def refresh_data(self):
         """刷新当前数据"""
@@ -439,7 +521,9 @@ def main():
     if "vista" in style.theme_names():
         style.theme_use("vista")
     
-    app = RealKlineUI(root)
+    # 使用代理配置创建应用
+    # 代理地址：127.0.0.1:7890
+    app = RealKlineUI(root, proxy_host="127.0.0.1", proxy_port=7890)
     
     # 居中显示窗口
     root.update_idletasks()
